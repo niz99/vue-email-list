@@ -9,7 +9,12 @@
 <body>
 
     <div id="root">
-        <h1>{{listaMail}}</h1>
+        
+        <h1>Le dieci mail sono:</h1>
+
+        <ul v-if="listaMail.length == 10">
+            <li v-for="mail in listaMail">{{mail}}</li>
+        </ul>
 
     </div>
     
